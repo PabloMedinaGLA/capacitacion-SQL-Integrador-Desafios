@@ -1,0 +1,25 @@
+use libreria;
+
+alter table autores
+add primary key (autor_id);
+
+alter table ventas
+add primary key(local_id,libro_id);
+
+alter table locales
+add primary key(local_id);
+
+alter table editoriales
+add primary key(editorial_id);
+
+alter table libros
+add primary key(libro_id,editorial_id);
+
+alter table libroautor
+add primary key(autor_id,libro_id);
+
+alter table empleados
+add primary key(empleado_id,puesto_id,editorial_id);
+
+alter table puestos
+add primary key(puesto_id);
